@@ -1,0 +1,13 @@
+<div>
+ <h1>LOGIN PAGE</h1>
+<form [formGroup]="loginform">
+username:
+<input type="text" name="name" formControlName="username"><br /> <br>
+Password:
+<input type="password" name="passwd" formControlName="password"><br /> <br>
+<button  routerlink="enter"(click)="login(loginform.value)">SUBMIT</button>
+<button  routerlink="enter"(click)="next()">NEXT</button>
+<p>Don't have an account?
+<button  routerlink="enter"(click)="new()">REGISTER HERE</button></p>
+</form>
+</div>

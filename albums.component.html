@@ -1,0 +1,21 @@
+<body>
+    <br/><br/>
+<input type="search" placeholder="Search" [(ngModel)]="search"> &nbsp;
+
+<button (click)="addmovie()">update Movie</button>
+<br/>
+​
+<table border="1" width="100%">
+    <tr>
+        <th>Movie Name</th>
+        <th>Language</th>
+        <th>Genre</th>
+    </tr>
+    
+    <tr *ngFor='let a of moviedata1|filter:search,let i=index'>
+        <td>{{a.MovieName}}</td>
+        <td>{{a.Language}}</td>
+        <td>{{a.Genre}}</td>
+    </tr>
+</table>
+</body>

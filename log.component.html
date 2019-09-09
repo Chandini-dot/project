@@ -1,0 +1,14 @@
+<div>
+<h1>REGISTER HERE</h1>
+<form [formGroup]="signuppageForm">
+USER NAME:
+<input type="text" formControlName="username"required><br/><br>
+PASSWORD:
+<input type="password" formControlName="password" required><br/><br>
+CONFIRM PASSWORD:
+<input type="password"  formControlName="cpassword"required><br/><br>
+<button  (click)="register(signuppageForm.value)">REGISTER</button><br>
+<p>Already have an account?
+     <button   routerlink="lognew"(click)="reg()">LOGIN HERE</button></p>
+</form>
+</div>

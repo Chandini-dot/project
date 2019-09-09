@@ -1,0 +1,12 @@
+<body>
+    <form [formGroup]="movies" ><br/>
+        MoviesName:
+        <input type="text" placeholder="moviesname" formControlName="moviesname"><br><br><br/>
+        Language:
+        <input type="text" placeholder="enter your language" formControlName="language"><br><br><br/>
+        Genre:
+        <input type="text" placeholder="enter genre" formControlName="genre"><br><br><br/>
+        <button (click)="add(movies.value)">Add</button>
+    </form>
+    <br/>
+</body>
